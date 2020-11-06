@@ -29,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
             height = Double.parseDouble(bundle.getString("Height")) / 100;
             weight = Double.parseDouble(bundle.getString("Weight"));
             bmi = weight / (height * height);
-            TextView bmitit = (TextView)findViewById(R.id.textview3);
+            TextView bmitit = (TextView)findViewById(R.id.textview5);
             bmitit.setText(nf.format(bmi));
             TextView abnormal = (TextView)findViewById(R.id.textview6);
             if (bmi < 18.5){
